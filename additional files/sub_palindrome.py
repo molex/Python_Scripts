@@ -17,22 +17,20 @@ import itertools
 def longest_subpalindrome_slice(text):
     "Return (i, j) such that text[i:j] is the longest palindrome in text."
     # Your code here
+    if text is '':
+        return 0,0
     text = text.upper()
-    for i,j,word in sub(text):
-        #print i,j,word
-        if valid(word):
-            return i,j
-   
-def sub(text):
-    nums = []
-    for number in range(0,len(text)+1):
-        nums.append(number)
-    print nums
-    for start,end in itertools.combinations_with_replacement(nums, 2):
-        new_word = list(itertools.islice(text,start,end))
-        new_word = "".join(new_word)
-        print new_word
-        yield start,end, new_word
+    i = 0
+    j = len(text)
+    word_list = ()
+    largest = ''
+    for i in range(len(text)+1):
+        for j in range(len(text),i, -1):
+            word = text[i:j]
+            if valid(word) and len(word) > len(largest):
+                largest = word
+                word_list = i,j
+    return word_list
                
 def valid(word):
     return word == word[::-1]
@@ -40,15 +38,14 @@ def valid(word):
 def test():
     L = longest_subpalindrome_slice
     assert L('racecar') == (0, 7)
-    #assert L('Racecar') == (0, 7)
-    #assert L('RacecarX') == (0, 7)
-    #assert L('Race carr') == (7, 9)
-    #assert L('') == (0, 0)
-    #assert L('something rac e car going') == (8,21)
-    #assert L('xxxxx') == (0, 5)
-    #assert L('Mad am I ma dam.') == (0, 15)
+    assert L('Racecar') == (0, 7)
+    assert L('RacecarX') == (0, 7)
+    assert L('Race carr') == (7, 9)
+    assert L('') == (0, 0)
+    assert L('something rac e car going') == (8,21)
+    assert L('xxxxx') == (0, 5)
+    assert L('Mad am I ma dam.') == (0, 15)
     return 'tests pass'
 
 print test()
-#longest_subpalindrome_slice('text')
 

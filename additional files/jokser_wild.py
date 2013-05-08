@@ -1,72 +1,18 @@
-# CS 212, hw1-2: Jokers Wild
-#
-# -----------------
-# User Instructions
-#
-# Write a function best_wild_hand(hand) that takes as
-# input a 7-card hand and returns the best 5 card hand.
-# In this problem, it is possible for a hand to include
-# jokers. Jokers will be treated as 'wild cards' which
-# can take any rank or suit of the same color. The 
-# black joker, '?B', can be used as any spade or club
-# and the red joker, '?R', can be used as any heart 
-# or diamond.
-#
-# The itertools library may be helpful. Feel free to 
-# define multiple functions if it helps you solve the
-# problem. 
-#
-# -----------------
-# Grading Notes
-# 
-# Muliple correct answers will be accepted in cases 
-# where the best hand is ambiguous (for example, if 
-# you have 4 kings and 3 queens, there are three best
-# hands: 4 kings along with any of the three queens).
-
 import itertools
+
 
 def best_wild_hand(hand):
     "Try all values for jokers in all 5-card selections."
     
     # Your code here
+    curr_hand = []
     best = []
-    options = []
     black = ("2C 2S 3C 3S 4C 4S 5C 5S 6C 6S 7C 7S 8C 8S 9C 9S TC TS JC JS QC QS KC KS AC AS").split()
     red = ("2H 2D 3H 3D 4H 4D 5H 5D 6H 6D 7H 7D 8H 8D 9H 9D TH TD JH JD QH QD KH KD AH AD").split()
-    if '?B' in hand and '?R' in hand:
+    if '?B' in hand:
         hand.remove('?B')
-        hand.remove('?R')
-        options = list(itertools.product(black,red))
-        for combo in options:
-            hand.append(combo[0])
-            hand.append(combo[1])
-            curr_hand = sorted(hand)
-            if best_hand(curr_hand) > best:
-                best = best_hand(curr_hand)
-            hand.remove(combo[0])
-            hand.remove(combo[1])
-    elif '?B' in hand:
-        hand.remove('?B')
-        for card in black:
-            hand.append(card)
-            curr_hand = sorted(hand)
-            if best_hand(curr_hand) > best:
-                best = best_hand(curr_hand)
-            hand.remove(card)
-    elif '?R' in hand:
-        hand.remove('?R')
-        for card in red:
-            hand.append(card)
-            curr_hand = sorted(hand)
-            if best_hand(curr_hand) > best:
-                best = best_hand(curr_hand)
-            hand.remove(card)
-   
-    else:
-        best = best_hand(hand)
-        
-    return sorted(best)
+        print hand
+    #return best_hand(hand)
 
 def best_hand(hand):
     "From a 7-card hand, return the best 5 card hand."
@@ -77,7 +23,7 @@ def best_hand(hand):
 
 def test_best_wild_hand():
     assert (sorted(best_wild_hand("6C 7C 8C 9C TC 5C ?B".split()))
-            == ['7C', '8C', '9C', 'JC', 'TC'])
+            == ['7C', '8C', '9C', 'TC', 'JC'])
     assert (sorted(best_wild_hand("TD TC 5H 5C 7C ?R ?B".split()))
             == ['7C', 'TC', 'TD', 'TH', 'TS'])
     assert (sorted(best_wild_hand("JD TC TH 7C 7D 7S 7H".split()))
@@ -147,4 +93,5 @@ def two_pair(ranks):
     else:
         return None 
 
-print test_best_wild_hand()
+#print test_best_wild_hand()
+best_wild_hand("6C 7C 8C 9C TC 5C ?B".split())
