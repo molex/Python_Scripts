@@ -6,16 +6,16 @@
 # at least twice.
 
 # For example,
-#text = 'all zip files are zipped' 
+# text = 'all zip files are zipped' 
 # >>> 18
 text = 'all zip files are compressed'
 # >>> -1
 
-#text = "all zip files are zipped" 
+# text = "all zip files are zipped" 
 
-#ENTER CODE BELOW HERE
+# ENTER CODE BELOW HERE
 s = text.find("zip")
-print(text.find("zip",s+1))
+print text.find("zip", s + 1)
 
 
 
