@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0fc26e02-3127-4419-9829-bdb6c9be87b4}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>CS101\Unit 4\lookup.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments />
+    <InterpreterPath>C:\Python27\Python.exe</InterpreterPath>
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Compile Include="additional files\Ace_low.py" />
+    <Compile Include="additional files\action_cost.py" />
+    <Compile Include="additional files\adding_tests.py" />
+    <Compile Include="additional files\all_ints.py" />
+    <Compile Include="additional files\all_max.py" />
+    <Compile Include="additional files\alt.py" />
+    <Compile Include="additional files\api.py" />
+    <Compile Include="additional files\attempt.py" />
+    <Compile Include="additional files\bridge_problem_low_cost.py" />
+    <Compile Include="additional files\bridge_successors.py" />
+    <Compile Include="additional files\bridge_successors_refactor.py" />
+    <Compile Include="additional files\card_rank.py" />
+    <Compile Include="additional files\card_ranks.py" />
+    <Compile Include="additional files\check_secure_val.py" />
+    <Compile Include="additional files\ckueless.py" />
+    <Compile Include="additional files\clean_up_mc.py" />
+    <Compile Include="additional files\create_salted_hash.py" />
+    <Compile Include="additional files\cSuccessors.py" />
+    <Compile Include="additional files\deal.py" />
+    <Compile Include="additional files\extreme_values.py" />
+    <Compile Include="additional files\fib_trace.py" />
+    <Compile Include="additional files\fill_in.py" />
+    <Compile Include="additional files\find_HTML_Tags.py" />
+    <Compile Include="additional files\floor_puzzle.py" />
+    <Compile Include="additional files\frontier.py" />
+    <Compile Include="additional files\gen_low_cost.py" />
+    <Compile Include="additional files\hand_freq.py" />
+    <Compile Include="additional files\hand_rank.py" />
+    <Compile Include="additional files\hold_and_roll.py" />
+    <Compile Include="additional files\hold_at.py" />
+    <Compile Include="additional files\inverse_function.py" />
+    <Compile Include="additional files\jokers_wild.py" />
+    <Compile Include="additional files\jokser_wild.py" />
+    <Compile Include="additional files\JSON_Parser.py" />
+    <Compile Include="additional files\kind_function.py" />
+    <Compile Include="additional files\list_comp.py" />
+    <Compile Include="additional files\load_dice.py" />
+    <Compile Include="additional files\logic_puzzle.py" />
+    <Compile Include="additional files\make_hashed_string.py" />
+    <Compile Include="additional files\make_salt.py" />
+    <Compile Include="additional files\make_secure_value_improved.py" />
+    <Compile Include="additional files\match_set.py" />
+    <Compile Include="additional files\more_pour.py" />
+    <Compile Include="additional files\more_pour2.py" />
+    <Compile Include="additional files\new.py" />
+    <Compile Include="additional files\new_drome.py" />
+    <Compile Include="additional files\no_leading_zero.py" />
+    <Compile Include="additional files\n_ary.py" />
+    <Compile Include="additional files\paths_actions_states.py" />
+    <Compile Include="additional files\play_pig.py" />
+    <Compile Include="additional files\prod_comb.py" />
+    <Compile Include="additional files\py-test.py" />
+    <Compile Include="additional files\search_and_match.py" />
+    <Compile Include="additional files\set_theory.py" />
+    <Compile Include="additional files\seven_card_stud.py" />
+    <Compile Include="additional files\sha256.py" />
+    <Compile Include="additional files\sick.py" />
+    <Compile Include="additional files\slow_zebra.py" />
+    <Compile Include="additional files\solve_cryptArithmatic.py" />
+    <Compile Include="additional files\sps.py" />
+    <Compile Include="additional files\straight_and_flush.py" />
+    <Compile Include="additional files\subway_plan2.py" />
+    <Compile Include="additional files\subway_planning.py" />
+    <Compile Include="additional files\sub_drome.py" />
+    <Compile Include="additional files\sub_palindrome.py" />
+    <Compile Include="additional files\test.py" />
+    <Compile Include="additional files\testes.py" />
+    <Compile Include="additional files\testing.py" />
+    <Compile Include="additional files\test_case.py" />
+    <Compile Include="additional files\timed_calls.py" />
+    <Compile Include="additional files\two_pait.py" />
+    <Compile Include="additional files\valid.py" />
+    <Compile Include="additional files\valid_salts.py" />
+    <Compile Include="additional files\wk4_hw1.py" />
+    <Compile Include="additional files\zebra.py" />
+    <Compile Include="CS101\Unit 1\DistanceInMeters.py" />
+    <Compile Include="CS101\Unit 1\findTwice.py" />
+    <Compile Include="CS101\Unit 1\hoo.py" />
+    <Compile Include="CS101\Unit 1\palindrome.py" />
+    <Compile Include="CS101\Unit 1\round.py" />
+    <Compile Include="CS101\Unit 1\superHero.py" />
+    <Compile Include="CS101\Unit 1\textReplace.py" />
+    <Compile Include="CS101\Unit 1\udacious.py" />
+    <Compile Include="CS101\Unit 2\abacus.py" />
+    <Compile Include="CS101\Unit 2\countdown.py" />
+    <Compile Include="CS101\Unit 2\daysOld.py" />
+    <Compile Include="CS101\Unit 2\daysOld2.py" />
+    <Compile Include="CS101\Unit 2\findlast.py" />
+    <Compile Include="CS101\Unit 2\jungleAnimal.py" />
+    <Compile Include="CS101\Unit 2\leapYearBaby.py" />
+    <Compile Include="CS101\Unit 2\median.py" />
+    <Compile Include="CS101\Unit 2\multiplicationTable.py" />
+    <Compile Include="CS101\Unit 2\setRange.py" />
+    <Compile Include="CS101\Unit 2\stamps.py" />
+    <Compile Include="CS101\Unit 2\superhero.py" />
+    <Compile Include="CS101\Unit 2\udacify.py" />
+    <Compile Include="CS101\Unit 2\weekend.py" />
+    <Compile Include="CS101\Unit 3\addToList.py" />
+    <Compile Include="CS101\Unit 3\crawl_web.py" />
+    <Compile Include="CS101\Unit 3\finishingCrawl.py" />
+    <Compile Include="CS101\Unit 3\get_all_links.py" />
+    <Compile Include="CS101\Unit 3\greatest.py" />
+    <Compile Include="CS101\Unit 3\listsofLists.py" />
+    <Compile Include="CS101\Unit 3\maxDepth.py" />
+    <Compile Include="CS101\Unit 3\maxPages.py" />
+    <Compile Include="CS101\Unit 3\meanList.py" />
+    <Compile Include="CS101\Unit 3\nonSymetric.py" />
+    <Compile Include="CS101\Unit 3\productList.py" />
+    <Compile Include="CS101\Unit 3\sudoku.py" />
+    <Compile Include="CS101\Unit 3\symetric.py" />
+    <Compile Include="CS101\Unit 4\addPageToIndex.py" />
+    <Compile Include="CS101\Unit 4\addToIndex.py" />
+    <Compile Include="CS101\Unit 4\betterSplitting.py" />
+    <Compile Include="CS101\Unit 4\convertingSeconds.py" />
+    <Compile Include="CS101\Unit 4\CountingClicks.py" />
+    <Compile Include="CS101\Unit 4\downloadCalculator.py" />
+    <Compile Include="CS101\Unit 4\impovingTheIndex.py" />
+    <Compile Include="CS101\Unit 4\latency.py" />
+    <Compile Include="CS101\Unit 4\lookup.py" />
+    <Compile Include="CS101\Unit 4\wordCount.py" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="Web Development\forms.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="additional files" />
+    <Folder Include="CS101\" />
+    <Folder Include="CS101\Exam 1\" />
+    <Folder Include="CS101\Exam 2\" />
+    <Folder Include="CS101\Code Editor\" />
+    <Folder Include="CS101\Final Project\" />
+    <Folder Include="CS101\Unit 7\" />
+    <Folder Include="CS101\Unit 6\" />
+    <Folder Include="CS101\Unit 5\" />
+    <Folder Include="CS101\Unit 1" />
+    <Folder Include="CS101\Unit 2" />
+    <Folder Include="CS101\Unit 3" />
+    <Folder Include="CS101\Unit 4" />
+    <Folder Include="Web Development" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
