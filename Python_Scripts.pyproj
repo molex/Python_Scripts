@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0fc26e02-3127-4419-9829-bdb6c9be87b4}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>CS101\Unit 4\lookup.py</StartupFile>
+    <StartupFile>CS101\Unit 5\PS 5 Optional\rotate.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -142,8 +142,59 @@
     <Compile Include="CS101\Unit 4\latency.py" />
     <Compile Include="CS101\Unit 4\lookup.py" />
     <Compile Include="CS101\Unit 4\wordCount.py" />
+    <Compile Include="CS101\Unit 5\DictionaryOfDictionaries.py" />
+    <Compile Include="CS101\Unit 5\involved.py" />
+    <Compile Include="CS101\Unit 5\memoization.py" />
+    <Compile Include="CS101\Unit 5\PS 5 Optional\rotate.py" />
+    <Compile Include="CS101\Unit 5\PS 5 Optional\shiftALetter.py" />
+    <Compile Include="CS101\Unit 5\PS 5 Optional\shift_n_letters.py" />
+    <Compile Include="CS101\Unit 5\refactoring.py" />
+    <Compile Include="CS101\Unit 5\when_offered.py" />
+    <Compile Include="Web Development\api_server.py" />
+    <Compile Include="Web Development\appcfg.py" />
+    <Compile Include="Web Development\bulkloader.py" />
+    <Compile Include="Web Development\bulkload_client.py" />
+    <Compile Include="Web Development\dev_appserver.py" />
+    <Compile Include="Web Development\download_appstats.py" />
+    <Compile Include="Web Development\gen_protorpc.py" />
+    <Compile Include="Web Development\google_sql.py" />
+    <Compile Include="Web Development\helloworld\Blog.py" />
+    <Compile Include="Web Development\helloworld\errors.py" />
+    <Compile Include="Web Development\helloworld\escape.py" />
+    <Compile Include="Web Development\helloworld\frame_work.py" />
+    <Compile Include="Web Development\helloworld\helloworld.py" />
+    <Compile Include="Web Development\helloworld\home.py" />
+    <Compile Include="Web Development\helloworld\rot13.py" />
+    <Compile Include="Web Development\helloworld\signup.py" />
+    <Compile Include="Web Development\new_project_template\main.py" />
+    <Compile Include="Web Development\remote_api_shell.py" />
     <Content Include="ReadMe.txt" />
     <Content Include="Web Development\forms.html" />
+    <Content Include="Web Development\helloworld\app.yaml" />
+    <Content Include="Web Development\helloworld\app.yaml~" />
+    <Content Include="Web Development\helloworld\Blog.pyc" />
+    <Content Include="Web Development\helloworld\Blog.py~" />
+    <Content Include="Web Development\helloworld\front.docx" />
+    <Content Include="Web Development\helloworld\helloworld.pyc" />
+    <Content Include="Web Development\helloworld\helloworld.py~" />
+    <Content Include="Web Development\helloworld\home.pyc" />
+    <Content Include="Web Development\helloworld\home.py~" />
+    <Content Include="Web Development\helloworld\main.docx" />
+    <Content Include="Web Development\helloworld\play.docx" />
+    <Content Include="Web Development\helloworld\play.html~" />
+    <Content Include="Web Development\helloworld\rot13.pyc" />
+    <Content Include="Web Development\helloworld\rot13.py~" />
+    <Content Include="Web Development\helloworld\signup.pyc" />
+    <Content Include="Web Development\helloworld\signup.py~" />
+    <Content Include="Web Development\helloworld\static\glider.ico" />
+    <Content Include="Web Development\helloworld\static\main.css" />
+    <Content Include="Web Development\helloworld\templates\front.docx" />
+    <Content Include="Web Development\helloworld\templates\main.docx" />
+    <Content Include="Web Development\helloworld\templates\newpost.docx" />
+    <Content Include="Web Development\helloworld\templates\post.docx" />
+    <Content Include="Web Development\new_project_template\app.yaml" />
+    <Content Include="Web Development\new_project_template\favicon.ico" />
+    <Content Include="Web Development\new_project_template\index.yaml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="additional files" />
@@ -152,6 +203,7 @@
     <Folder Include="CS101\Exam 2\" />
     <Folder Include="CS101\Code Editor\" />
     <Folder Include="CS101\Final Project\" />
+    <Folder Include="CS101\Unit 5\PS 5 Optional\" />
     <Folder Include="CS101\Unit 7\" />
     <Folder Include="CS101\Unit 6\" />
     <Folder Include="CS101\Unit 5\" />
@@ -160,6 +212,10 @@
     <Folder Include="CS101\Unit 3" />
     <Folder Include="CS101\Unit 4" />
     <Folder Include="Web Development" />
+    <Folder Include="Web Development\helloworld\" />
+    <Folder Include="Web Development\helloworld\static\" />
+    <Folder Include="Web Development\helloworld\templates\" />
+    <Folder Include="Web Development\new_project_template\" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
